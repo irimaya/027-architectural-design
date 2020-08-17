@@ -1,0 +1,115 @@
+// Header
+.mainheader {
+  h1 {
+    float: left;
+    font-size: 1.9rem;
+    color: red;
+  }
+  ul {
+    float: right;
+    padding-top: 10px;
+    li {
+      display: inline-block;
+      padding-right: 20px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .current {
+    text-decoration: underline;
+  }
+}
+
+//Home
+#home {
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+    &-content {
+      padding-top: 120px;
+      margin: 0 auto;
+      a {
+        color: $secondary-color;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    } //End &-content
+    &-img-1 {      
+      background: url('../img/background-1.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+    } //End .&-img-1
+    &-img-2 {      
+      background: url('../img/background-2.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+    } //End .&-img-1
+    &-img-3 {      
+      background: url('../img/background-3.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+    } //End .&-img-1
+  } //End .home-wrapper
+} //End #home
+
+//About
+#about {
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 3em;
+    &-content {
+      padding-top: 120px;
+      margin: 0 auto;
+      a {
+        color: $secondary-color;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    } //End &-content
+    &-about {
+      padding-top: 50px;
+      padding-right: 90px;
+    }
+  } //End .home-wrapper
+} //End #home
+
+//Contact
+#contact {
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 3em;
+    &-content {
+      padding-top: 120px;
+      margin: 0 auto;
+      a {
+        color: $secondary-color;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    } //End &-content
+    &-contact {
+      padding-top: 120px;
+      input {
+        width: 50%;
+        background: $main-color;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px $secondary-color solid;
+        margin-bottom: 30px;
+      }
+    }
+  } //End .home-wrapper
+} //End #contact
